@@ -75,10 +75,6 @@ RESPONSES = {
             "I was built with Python! It's beginner-friendly yet incredibly powerful.",
         ],
     },
-    "codealpha": {
-        "triggers": ["codealpha", "code alpha", "your company", "internship"],
-        "replies":  ["CodeAlpha is a great platform for learning! Check them out at www.codealpha.tech 🚀"],
-    },
     "help": {
         "triggers": ["help", "what can you do", "commands", "options", "menu"],
         "replies":  [],   # handled dynamically
@@ -147,7 +143,7 @@ def get_help_response():
     return (
         f"\n  Here's what I can do, {{name}}:\n"
         "  • Chat — greetings, how are you, jokes, mood support\n"
-        "  • Info  — time, date, Python facts, CodeAlpha info\n"
+        "  • Info  — time, date, Python facts\n"
         "  • Math  — type 'calculate 25 * 4' or 'sqrt 144'\n"
         "  • Quiz  — type 'quiz' to test your knowledge\n"
         "  • History — type 'history' to see our conversation\n"
@@ -296,7 +292,7 @@ def is_exit(text):
 # ─────────────────────────────────────────────
 def main():
     print("\n" + "═" * 46)
-    print(f"   {BOT_NAME} v{BOT_VERSION} — CodeAlpha Python Internship")
+    print(f"   {BOT_NAME} v{BOT_VERSION} — Python Chatbot")
     print("═" * 46)
     print(f"  Hi! I'm {BOT_NAME} 🤖  Type 'help' to see what I can do.")
     print("  Type 'bye' to exit.\n")
